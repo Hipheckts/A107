@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home - A107 Salon</title>
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-density dpi=device-dpi" />
+	<!-- UIkit CSS -->
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" /> -->
+	<link rel="stylesheet" type="text/css" href="css/uikit.css">
+
+	<!-- UIkit JS -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script> -->
+	<script type="text/javascript" src="js/uikit.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script> -->
+	<script type="text/javascript" src="js/uikit-icons.min.js"></script>
+</head>
+<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+	<nav class="uk-navbar-social" uk-navbar style="position: relative; z-index: 980;">
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-top">
+                <li><a href="#">MON - SAT : 7:00 - 20:00 \ SUNDAYS : CLOSED</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
+    	<div class="uk-navbar-left" style="margin-top: 20px; margin-bottom: 10px;">
+    		<a class="uk-navbar-item uk-logo" href="/"><img src="images/icons/logo.png" style="height: 30px; margin-top: -5px;"></a>
+    	</div>
+        <div class="uk-navbar-center uk-visible@s" style="margin-top: 0px; margin-bottom: 15px;">
+            <ul class="uk-navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li><a>\</a></li>
+                <li><a href="#about" uk-scroll>About</a></li>
+                <li><a>\</a></li>
+                <li><a href="#servicing" uk-scroll>Servicing & Pricing</a></li>
+                <li><a>\</a></li>
+                <li><a href="#gallery" uk-scroll>Gallery</a></li>
+                <li><a>\</a></li>
+                <li><a href="#team" uk-scroll>Our Team</a></li>
+                <li><a>\</a></li>
+                <li><a href="#contact" uk-scroll>Contact</a></li>
+            </ul>
+        </div>
+        <div class="uk-navbar-right">
+        	<a uk-toggle="target: #offcanvas-nav-primary" class="uk-hidden@s" style="margin-right: 10px; color: #413026"><span uk-icon="icon: thumbnails"></span></a>
+			<div id="offcanvas-nav-primary" uk-offcanvas="mode: push">
+			    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+			        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+			            <li class="uk-active"><a href="/">Home</a></li>
+			            <li><a href="#about" uk-scroll>About</a></li>
+			            <li><a href="#servicing" uk-scroll>Servicing & Pricing</a></li>
+			            <li><a href="#gallery" uk-scroll>Gallery</a></li>
+			            <li><a href="#team" uk-scroll>Our Team</a></li>
+			            <li><a href="#contact" uk-scroll>Contact</a></li>
+			        </ul>
+
+			    </div>
+			</div>
+        	<a class="uk-button uk-button-primary"  style="margin-top: 0px; margin-right: 30px;" uk-toggle="target: #modal-example">Book Now</a>
+
+			<!-- This is the modal -->
+			<div id="modal-example" uk-modal>
+			    <div class="uk-modal-dialog uk-modal-body">
+			        <h2 class="uk-modal-title">Make a Booking</h2>
+			        	<form>
+						    <fieldset class="uk-fieldset">
+						        <div class="uk-margin">
+						            <input class="uk-input" type="text" name="name" placeholder="Name">
+						        </div>
+						        <div class="uk-margin">
+						            <input class="uk-input" type="text" name="telephone" placeholder="Telephone">
+						        </div>
+						        <!-- <div class="uk-margin">
+						            <input class="uk-input" type="text" name="email" placeholder="Email">
+						        </div> -->
+						        <div class="uk-margin">
+						            <select class="uk-select" placeholder="Select Service">
+						                <option name="Hair Making">Hair Making</option>
+						                <option name="Hair Cut">Hair Cut</option>
+						                <option name="Gele Tying">Gele Tying</option>
+						                <option name="Makeover">Makeover</option>
+						                <option name="Manicure">Manicure</option>
+						                <option name="Pedicure">Pedicure</option>
+						            </select>
+						        </div>
+						        <div class="uk-margin">
+						            <input class="uk-input" type="date" name="date" placeholder="Select Date">
+						        </div>
+						        <div class="uk-margin">
+						            <input class="uk-input" type="time" name="date" placeholder="Select Date">
+						        </div>
+						        <div class="uk-margin">
+						            <textarea class="uk-textarea" rows="3" name="message" placeholder="Other Information"></textarea>
+						        </div>
+						    </fieldset>
+						</form>
+			        <p class="uk-text-right">
+			            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+			            <button class="uk-button uk-button-primary" type="button">Book</button>
+			        </p>
+			    </div>
+			</div>
+
+        </div>
+    </nav>
+</div>
+<body class="uk-background-default">
+	<div class="uk-container-fluid">
+		<div class="uk-position-relative uk-light" uk-slideshow>
+
+		    <ul class="uk-slideshow-items">
+		        <li>
+		            <div class="uk-height-high uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="images/shop.jpg" uk-img>
+					  <h1>Background Image</h1>
+					</div>
+		        </li>
+		        <li>
+		            <div class="uk-height-high uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="images/makeup.jpg" uk-img>
+					  <h1>Background Image</h1>
+					</div>
+		        </li>
+		    </ul>
+
+		    <div class="uk-position-left uk-position-small">
+		        <ul class="uk-dotnav uk-dotnav-vertical">
+				    <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
+		            <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
+				</ul>
+		    </div>
+		</div>
+	</div>
+
+	<!-- <div class="uk-child-width-1-4@s uk-grid-match" uk-grid>
+	    <div  style="margin-left: 20!important;">
+	        <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+	            <h3 class="uk-card-title">Default</h3>
+	            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	        </div>
+	    </div>
+	    <div  style="margin-left: 0!important;">
+	        <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+	            <h3 class="uk-card-title">Default</h3>
+	            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	        </div>
+	    </div>
+	</div> -->
+
+	<!-- SERVICING SECTION -->
+
+	<div class="uk-container"  id="servicing">
+		<div class="uk-child-width-1-1 uk-child-width-1-4@s uk-grid-collapse uk-text-center" uk-grid>
+		    <div>
+		        <div class="uk-tile uk-tile-default">
+		            <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+		            	<img src="images/icons/2.png" style="width: 60px; height: 100px;">
+			            <h3 class="uk-card-title">Hair Making</h3>
+			        </div>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		        </div>
+		    </div>
+		    <div>
+		        <div class="uk-tile uk-tile-default">
+		            <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+		            	<img src="images/icons/3.png" style="width: 60px; height: 100px;">
+			            <h3 class="uk-card-title">Hair Cut</h3>
+			        </div>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		        </div>
+		    </div>
+		    <div>
+		        <div class="uk-tile uk-tile-default">
+		            <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+		            	<img src="images/icons/4.png" style="width: 60px; height: 100px;">
+			            <h3 class="uk-card-title">Makeover</h3>
+			        </div>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		        </div>
+		    </div>
+		    <div>
+		        <div class="uk-tile uk-tile-default">
+		            <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+		            	<img src="images/icons/5.png" style="width: 60px; height: 100px;">
+			            <h3 class="uk-card-title">Manicure</h3>
+			        </div>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		        </div>
+		    </div>
+		    <div>
+		        <div class="uk-tile uk-tile-default">
+		            <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+		            	<img src="images/icons/6.png" style="width: 60px; height: 100px;">
+			            <h3 class="uk-card-title">VIP Area</h3>
+			        </div>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		        </div>
+		    </div>
+		    <div>
+		        <div class="uk-tile uk-tile-default">
+		            <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+		            	<img src="images/icons/7.png" style="width: 60px; height: 100px;">
+			            <h3 class="uk-card-title">Gele Tying</h3>
+			        </div>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		        </div>
+		    </div>
+		    <div>
+		        <div class="uk-tile uk-tile-default">
+		            <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+		            	<img src="images/icons/8.png" style="width: 60px; height: 100px;">
+			            <h3 class="uk-card-title">Nail Fixing</h3>
+			        </div>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		        </div>
+		    </div>
+		    <div>
+		        <div class="uk-tile uk-tile-default">
+		            <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+		            	<img src="images/icons/1.png" style="width: 60px; height: 100px;">
+			            <h3 class="uk-card-title">Wig Making</h3>
+			        </div>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		        </div>
+		    </div>
+		</div>
+	</div>
+
+	<!-- GALLERY SECTION -->
+	<div class="uk-section-default" id="gallery">
+	    <div class="uk-section uk-light uk-background-fixed" style="background-image: url(images/makeup.jpg)">
+	        <div class="uk-container">
+	        	<div class="uk-child-width-1-2 uk-child-width-1-4@s uk-grid-match uk-grid-small" uk-grid>
+				    <div class="uk-text-center">
+				        <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+				            <img src="images/gallery-1.jpg" alt="">
+				            <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+				                <p class="uk-h4 uk-margin-remove">Hair Cut</p>
+				            </div>
+				        </div>
+				    </div>
+				    <div class="uk-text-center">
+				        <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+				            <img src="images/gallery-8.jpg" alt="">
+				            <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+				                <p class="uk-h4 uk-margin-remove">Gele Tying</p>
+				            </div>
+				        </div>
+				    </div>
+				    <div class="uk-text-center">
+				        <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+				            <img src="images/gallery-7.jpg" alt="">
+				            <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+				                <p class="uk-h4 uk-margin-remove">Hair Shaving</p>
+				            </div>
+				        </div>
+				    </div>
+				    <div class="uk-text-center">
+				        <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+				            <img src="images/gallery-8.jpg" alt="">
+				            <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+				                <p class="uk-h4 uk-margin-remove">Gele Tying</p>
+				            </div>
+				        </div>
+				    </div>
+				    <div class="uk-text-center">
+				        <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+				            <img src="images/gallery-4.jpg" alt="">
+				            <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+				                <p class="uk-h4 uk-margin-remove">Hair Making</p>
+				            </div>
+				        </div>
+				    </div>
+				    <div class="uk-text-center">
+				        <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+				            <img src="images/gallery-9.jpg" alt="">
+				            <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+				                <p class="uk-h4 uk-margin-remove">Children Cut</p>
+				            </div>
+				        </div>
+				    </div>
+				    <div class="uk-text-center">
+				        <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+				            <img src="images/gallery-12.jpg" alt="">
+				            <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+				                <p class="uk-h4 uk-margin-remove">Hair Cut</p>
+				            </div>
+				        </div>
+				    </div>
+				    <div class="uk-text-center">
+				        <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+				            <img src="images/gallery-4.jpg" alt="">
+				            <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+				                <p class="uk-h4 uk-margin-remove">Hair Making</p>
+				            </div>
+				        </div>
+				    </div>
+				</div>
+	        </div>
+	    </div>
+	</div>
+
+	<!-- TEAM SECTION -->
+	<div class="uk-section uk-section-default">
+
+        <h3 class="uk-text-center" id="team">Our Team</h3>
+
+        <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
+            <div class="uk-card uk-card-default uk-width-1-4@m">
+			    <div class="uk-card-header">
+			        <div class="uk-grid-small uk-flex-middle" uk-grid>
+			            <div class="uk-width-auto">
+			                <img class="uk-border-circle uk-flex-center" width="60" height="60" src="images/gallery-4.jpg">
+			            </div>
+			            <div class="uk-width-expand" style="margin-left: 10px;">
+			                <h5 class="uk-margin-remove-bottom">Chris Smalling</h5>
+			                <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">Stylist</time></p>
+			            </div>
+			        </div>
+			    </div>
+			    <div class="uk-card-footer">
+			        <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
+					<a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
+					<a href="" class="uk-icon-button" uk-icon="instagram"></a>
+			    </div>
+			</div>
+
+			<div class="uk-card uk-card-default uk-width-1-4@m">
+			    <div class="uk-card-header">
+			        <div class="uk-grid-small uk-flex-middle" uk-grid>
+			            <div class="uk-width-auto">
+			                <img class="uk-border-circle uk-flex-center" width="60" height="60" src="images/gallery-4.jpg">
+			            </div>
+			            <div class="uk-width-expand" style="margin-left: 10px;">
+			                <h5 class="uk-margin-remove-bottom">Chris Smalling</h5>
+			                <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">Barber</time></p>
+			            </div>
+			        </div>
+			    </div>
+			    <div class="uk-card-footer">
+			        <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
+					<a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
+					<a href="" class="uk-icon-button" uk-icon="instagram"></a>
+			    </div>
+			</div>
+
+			<div class="uk-card uk-card-default uk-width-1-4@m">
+			    <div class="uk-card-header">
+			        <div class="uk-grid-small uk-flex-middle" uk-grid>
+			            <div class="uk-width-auto">
+			                <img class="uk-border-circle uk-flex-center" width="60" height="60" src="images/gallery-4.jpg">
+			            </div>
+			            <div class="uk-width-expand" style="margin-left: 10px;">
+			                <h5 class="uk-margin-remove-bottom">Chris Smalling</h5>
+			                <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">Pedicurist</time></p>
+			            </div>
+			        </div>
+			    </div>
+			    <div class="uk-card-footer">
+			        <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
+					<a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
+					<a href="" class="uk-icon-button" uk-icon="instagram"></a>
+			    </div>
+			</div>
+
+			<div class="uk-card uk-card-default uk-width-1-4@m">
+			    <div class="uk-card-header">
+			        <div class="uk-grid-small uk-flex-middle" uk-grid>
+			            <div class="uk-width-auto">
+			                <img class="uk-border-circle uk-flex-center" width="60" height="60" src="images/gallery-4.jpg">
+			            </div>
+			            <div class="uk-width-expand" style="margin-left: 10px;">
+			                <h5 class="uk-margin-remove-bottom">Chris Smalling</h5>
+			                <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">Barber</time></p>
+			            </div>
+			        </div>
+			    </div>
+			    <div class="uk-card-footer">
+			        <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
+					<a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
+					<a href="" class="uk-icon-button" uk-icon="instagram"></a>
+			    </div>
+			</div>
+        </div>
+    </div>
+
+        <!-- CONTACT SECTIONS -->
+        <div class="uk-section uk-section-primary" id="contact">
+		    <div class="uk-container">
+			    <div class="uk-grid-match uk-grid-small uk-text-center" uk-grid>
+				    <div class="uk-width-1-5@m uk-width-1-3@l">
+				    	<dl class="uk-description-list uk-description-list-divider uk-text-left">
+						    <dd><b>Address:</b></dd>
+						    <dd>35, Adetokunbo Ademola Street, Victoria Island, Lagos, Nigeria.</dd><br>
+						    <dd><b>Email:</b></dd>
+						    <dd>info@a107salon.com</dd>
+						    <dd>booking@a107salon.com</dd><br>
+						    <dd><b>Telephone:</b></dd>
+						    <dd>+234930839383</dd><br>
+						    <dd><b>Social:</b></dd>
+						    <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
+							<a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
+							<a href="" class="uk-icon-button" uk-icon="instagram"></a>
+						</dl>
+				    </div>
+				    <div class="uk-width-3-5@m uk-width-2-3@l">
+				    	<form>
+						    <fieldset class="uk-fieldset">
+						        <legend class="uk-legend uk-text-left">Contact Us</legend>
+
+						        <div class="uk-margin">
+						            <input class="uk-input" type="text" name="name" placeholder="Name">
+						        </div>
+						        <div class="uk-margin">
+						            <input class="uk-input" type="text" name="email" placeholder="Email">
+						        </div>
+						        <div class="uk-margin">
+						            <textarea class="uk-textarea" rows="5" name="message" placeholder="Type a Message"></textarea>
+						        </div>
+						        <a type="submit" class="uk-button uk-button-primary">Send Message</a>
+						    </fieldset>
+						</form>
+				    </div>
+				</div>
+			</div>
+		</div>
+</div>
+
+</body>
+</html>

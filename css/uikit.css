@@ -3643,8 +3643,8 @@ select.uk-form-width-xsmall {
     box-sizing: border-box;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 
@@ -3652,8 +3652,8 @@ select.uk-form-width-xsmall {
 
 @media (min-width: 640px) {
     .uk-tile {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -3662,10 +3662,10 @@ select.uk-form-width-xsmall {
 
 @media (min-width: 960px) {
     .uk-tile {
-        padding-left: 40px;
-        padding-right: 40px;
-        padding-top: 70px;
-        padding-bottom: 70px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 }
 

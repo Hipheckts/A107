@@ -7385,7 +7385,7 @@ ul.uk-nav-sub {
 .uk-slideshow {
     /* 1 */
     -webkit-tap-highlight-color: transparent;
-    height: 400px;
+    height: 450px;
 }
 
 
@@ -7413,7 +7413,7 @@ ul.uk-nav-sub {
     /* 4 */
     -webkit-touch-callout: none;
     /* 5 */
-    height: 400px;
+    height: 450px;
 }
 
 
@@ -7444,7 +7444,7 @@ ul.uk-nav-sub {
     /* 5 */
     touch-action: pan-y;
     /* 6 */
-    height: 400px;
+    height: 450px;
 }
 
 

@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="css/uikit.css">
     <!-- Main CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Animation CSS -->
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
 
     <!-- UIkit JS -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script> -->
@@ -123,33 +125,33 @@
 </div>
 
 <body class="uk-background-default">
-    <div uk-slideshow="animation: random; autoplay:true; autoplay-interval:2500">
+    <div uk-slideshow="animation: random; autoplay:true; autoplay-interval:3500">
 
         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
 
             <ul class="uk-slideshow-items">
                 <li>
-                    <img src="./img/Slide2.png" alt="" uk-cover>
+                    <img src="./img/Slide2.png" alt="" class="animated JumpIn" uk-cover>
                     <div class="uk-position-center-left uk-position-small uk-text-left" style="margin-left:100px">
-                        <h2 uk-slideshow-parallax="x: 100,-100" style="letter-spacing:3px;">THE BEAUTY OF A<br> WOMAN LIES IN <br> OUR SALON ;)</h2>
-                        <p uk-slideshow-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
-                        <a class="uk-button uk-button-primary" style="margin-top: 0px; margin-right: 30px;" uk-toggle="target: #modal-example">Read More</a>
+                        <h2 uk-slideshow-parallax="x: 100,-100" style="letter-spacing:3px;" class="animated bounceInDown flipInY">THE BEAUTY OF A<br> WOMAN LIES IN <br> OUR SALON ;)</h2>
+                        <p uk-slideshow-parallax="x: 200,-200" class="animated bounceInLeft">Lorem ipsum dolor sit amet.</p>
+                        <a class="uk-button uk-button-primary animated rubberBand" style="margin-top: 0px; margin-right: 30px;" uk-toggle="target: #modal-example">Read More</a>
                     </div>
                 </li>
                 <li>
-                    <img src="./img/Slide1.png" alt="" uk-cover>
+                    <img src="./img/Slide1.png" alt="" class="animated fadeIn" uk-cover>
                     <div class="uk-position-center-left uk-position-small uk-text-left" style="margin-left:100px">
-                        <h2 uk-slideshow-parallax="x: 100,-100" style="letter-spacing:3px;">THE BEAUTY OF A<br> WOMAN LIES IN <br> OUR SALON ;)</h2>
-                        <p uk-slideshow-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
-                        <a class="uk-button uk-button-primary" style="margin-top: 0px; margin-right: 30px;" uk-toggle="target: #modal-example">Read More</a>
+                        <h2 uk-slideshow-parallax="x: 100,-100" style="letter-spacing:3px;" class="animated bounceInDown">THE BEAUTY OF A<br> WOMAN LIES IN <br> OUR SALON ;)</h2>
+                        <p uk-slideshow-parallax="x: 200,-200" class="animated bounceInLeft">Lorem ipsum dolor sit amet.</p>
+                        <a class="uk-button uk-button-primary animated bounceInUp" style="margin-top: 0px; margin-right: 30px;" uk-toggle="target: #modal-example">Read More</a>
                     </div>
                 </li>
                 <li>
-                    <img src="./img/Slide3.png" alt="" uk-cover>
+                    <img src="./img/Slide3.png" alt="" class="animated fadeIn" uk-cover>
                     <div class="uk-position-center-left uk-position-small uk-text-left" style="margin-left:100px">
-                        <h2 uk-slideshow-parallax="x: 100,-100" style="letter-spacing:3px;">THE BEAUTY OF A<br> WOMAN LIES IN <br> OUR SALON ;)</h2>
-                        <p uk-slideshow-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
-                        <a class="uk-button uk-button-primary" style="margin-top: 0px; margin-right: 30px;" uk-toggle="target: #modal-example">Read More</a>
+                        <h2 uk-slideshow-parallax="x: 100,-100" style="letter-spacing:3px;" class="animated bounceInRight">THE BEAUTY OF A<br> WOMAN LIES IN <br> OUR SALON ;)</h2>
+                        <p uk-slideshow-parallax="x: 200,-200" class="animated bounceInLeft">Lorem ipsum dolor sit amet.</p>
+                        <a class="uk-button uk-button-primary animated bounceInRight" style="margin-top: 0px; margin-right: 30px;" uk-toggle="target: #modal-example">Read More</a>
                     </div>
                 </li>
             </ul>
